@@ -10,7 +10,6 @@ Background: movies in database
   | title        | rating | director     | release_date |
   | Star Wars    | PG     | George Lucas |   1977-05-25 |
   | Blade Runner | PG     | Ridley Scott |   1982-06-25 |
-  | Alien        | R      |              |   1979-05-25 |
   | THX-1138     | R      | George Lucas |   1971-03-11 |
 
 Scenario: add director to existing movie
