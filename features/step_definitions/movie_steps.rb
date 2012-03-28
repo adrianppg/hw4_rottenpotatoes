@@ -77,10 +77,6 @@ When /^I uncheck "([^"]*)" checkbox$/ do |field|
   uncheck(field)
 end
 
-When /^(?:|I )press "([^"]*)"$/ do |button|
-  click_button(button)
-end
-
 When /^(?:|I )show all movies/ do
   step "I am on the RottenPotatoes home page"
   step "I check all ratings"

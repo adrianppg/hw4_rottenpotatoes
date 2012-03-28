@@ -58,6 +58,9 @@ When /^(?:|I )follow "([^"]*)"$/ do |link|
 end
 
 When /^(?:|I )fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
+puts field
+puts value
+puts page.html
   fill_in(field, :with => value)
 end
 
