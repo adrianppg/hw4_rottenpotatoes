@@ -132,3 +132,7 @@ Then /^(?:|I )should see no movies$/ do
   row_number = page.all('#movies tbody tr').size
   assert row_number == 0
 end
+
+Then /^the (.*) of (.*) should be (.*) $/ do |field, id, value|
+    step %Q{I should see "#{value}"}
+end
