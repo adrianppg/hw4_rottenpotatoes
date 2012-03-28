@@ -25,6 +25,7 @@ module NavigationHelpers
       puts $1
       movie= Movie.find_by_title($1)
       puts movie
+      puts movie[:director]
       edit_movie_path(Movie.find_by_title($1))
     else
       begin
