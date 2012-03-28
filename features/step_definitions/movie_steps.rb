@@ -133,6 +133,6 @@ Then /^(?:|I )should see no movies$/ do
   assert row_number == 0
 end
 
-Then /^the (.*) of (.*) should be (.*) $/ do |field, id, value|
+Then /^the "(.*)" of "(.*)" should be (.*) $/ do |field, id, value|
     step %Q{I should see "#{value}"}
 end
