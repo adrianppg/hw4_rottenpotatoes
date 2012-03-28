@@ -1,4 +1,4 @@
-tar czf hw4.tar.gz app/ config/ db/migrate features/ spec/ Gemfile
+#tar czf hw4.tar.gz app/ config/ db/migrate features/ spec/ Gemfile
 git add .
 git commit -m "$1" -a
 git push heroku master
