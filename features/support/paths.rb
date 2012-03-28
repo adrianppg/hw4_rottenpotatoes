@@ -24,7 +24,7 @@ module NavigationHelpers
     when /^the edit page for \"(.*)\"$/i
       puts $1
       movie= Movie.find_by_title($1)
-      puts movie(:director)
+      puts movie
       edit_movie_path(Movie.find_by_title($1))
     else
       begin
