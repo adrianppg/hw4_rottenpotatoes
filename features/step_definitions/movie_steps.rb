@@ -38,11 +38,6 @@ When /^(?:|I )follow "([^"]*)"$/ do |link|
   click_link(link)
 end
 
-Given /^(?:|I )am on (.+)$/ do |page_name|
-  visit "http://high-rain-8756.herokuapp.com/movies"
-#  visit "http://localhost/movies"
-end
-
 Then /^(?:|I )should see movies sorted by (.*)/ do |sort_by_key|
   moviesList = Movie.order(sort_by_key.to_sym)
   moviesList[1..moviesList.length-1].zip(moviesList[0..moviesList.length-2]).each do |x, y|
