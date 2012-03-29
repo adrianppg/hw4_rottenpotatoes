@@ -2,11 +2,13 @@ class Movie < ActiveRecord::Base
   def self.all_ratings
     %w(G PG PG-13 NC-17 R)
   end
-  def self.find_with_same_director director
-    if director <=> nil
+  def self.directed_by(director)
+#TODO
+#if director <=> nil
+    if director == nil or director.empty?
       return []
     else
-      Movie.find_all_by_director(director)
+      return Movie.find_all_by_director(director)
     end
   end
 end
