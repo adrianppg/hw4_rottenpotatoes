@@ -61,7 +61,6 @@ class MoviesController < ApplicationController
   def find_by_same_director
     @all_ratings = Movie.all_ratings
     @selected_ratings = session[:ratings] || {}
-
     movie = Movie.find_by_id(params[:id])
     if movie.director.blank?
       flash[:notice] = "'#{movie.title}' has no director info"
