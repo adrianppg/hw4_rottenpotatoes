@@ -58,7 +58,7 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
-  def find_by_same_director
+  def same_director
     @all_ratings = Movie.all_ratings
     @selected_ratings = session[:ratings] || {}
     movie = Movie.find_by_id(params[:id])
