@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rake'
-gem 'sqlite3-ruby'
+#gem 'sqlite3-ruby'
 gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
